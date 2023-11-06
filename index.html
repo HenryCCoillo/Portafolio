@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Ccoillo</title>
+    <link rel="icon shortcut" href="icons-backend.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-light">
+    <header id="top">
+        <a class="header-title link" href="https://henryban.online">Henry Ccoillo</a>
+        <nav>
+            <ul>
+                <li><a href="#project" class="link">Proyectos</a></li>
+                <li><a href="#stack" class="link">Stack</a></li>
+                <li><a href="#contact" class="link">Contacto</a></li>
+            </ul>
+            <button>
+                <i class="icon-normal fas fa-moon"></i>
+            </button>
+            <button>
+                <i class="icon-normal fas fa-bars java"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Hola! Soy <span class="hero-name">Henry</span><span class="hero-name">Ccoillo</span>
+        </h1>
+        <div class="hero-about">
+            <p>
+                Soy un profesional altamente comprometido y apasionado en el campo de la ciberseguridad y el desarrollo web. Mi sólida formación académica y experiencia en estas áreas me ha permitido desempeñar un papel integral en la protección de la información y la creación de aplicaciones web seguras. Mi objetivo es seguir desarrollando soluciones tecnológicas innovadoras que cumplan con los más altos estándares de seguridad y funcionalidad.
+            </p>
+            <a href="henryccoillo.pdf" target="_blank" rel="noopener"><span class="btn">Descagar CV</span></a>
+        </div>
+    </div>
+    <section id="project" class="project">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="project-container">
+            <div class="bannerImg" id="slideshow">
+                <img src="img/almacen-dashboard.png" alt="almacen-dashboard" class="active" />
+                <img src="img/almacen-modulo.png" alt="almacen-modulo" />
+                <img src="img/almacen-login.png" alt="almacen-login" />
+                <img src="img/almacen-register.png" alt="almacen-register" />
+                <ul class="listSlider">
+                    <li>
+                        <button onclick="prevSlide(this)"><i class="fas fa-chevron-left"></i></button>
+                    </li>
+                    <li>
+                        <button onclick="nextSlide(this)"><i class="fas fa-chevron-right"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-content">
+                <h3>Sistema de Gestion</h3>
+                <p>Desarrollé una aplicación de Gestion, que incluye un sistema de login y registro para garantizar la seguridad de los usuarios. La aplicación cuenta con un potente dashboard de estadísticas que proporciona elrendimiento del negocio. Además, incorpora áreas dedicadas a la gestión de clientes, productos y ventas. </p>
+                <ul class="project-skill">
+                    <li>Django</li>
+                    <li>Bootstraps</li>
+                    <li>Json</li>
+                </ul>
+                <ul class="project-link">
+                    <li>
+                        <a href="https://github.com/HenryCCoillo/" target="_blank" title="Código Fuente" rel="noopener">
+                            <i class="icon-border fas fa-code"aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://frontend.henryban.online/" target="_blank" title="Visualizar" rel="noopener">
+                            <i aria-hidden="true" class="icon-border fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="bannerImg" id="slideshow1">
+                <img src="img/chat_sala.png" alt="chat-salas"  class="active" />
+                <img src="img/chat_list.png" alt="chat-salas" />
+                <img src="img/chat_login.png" alt="chat-login" />
+                <img src="img/chat_register.png" alt="chat-register" />
+                <ul class="listSlider">
+                    <li>
+                        <button onclick="prevSlide2(this)"><i class="fas fa-chevron-left"></i></button>
+                    </li>
+                    <li>
+                        <button onclick="nextSlide2(this)"><i class="fas fa-chevron-right"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-content">
+                <h3>Chat en Tiempo Real</h3>
+                <p>
+                    Este proyecto tiene como objetivo desarrollar un sistema de chat en tiempo real que permitirá a los usuarios comunicarse de manera instantánea ofreciendo una experiencia de usuario fluida y enriquecedora a través de una plataforma web, utilizando Django Channels.
+                </p>
+                <ul class="project-skill">
+                    <li>Django</li>
+                    <li>WebSocket</li>
+                    <li>JavaScript</li>
+                </ul>
+                <ul class="project-link">
+                    <li>
+                        <a href="https://github.com/HenryCCoillo/django-chat-group" target="_blank" title="Código Fuente" rel="noopener">
+                            <i class="icon-border fas fa-code" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://chat.henryban.online/" target="_blank" title="Visualizar" rel="noopener">
+                            <i aria-hidden="true" class="icon-border fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="bannerImg" id="slideshow2">
+                <img src="img/twofactor_qr.png" alt="twofactor-qr" class="active" />
+                <img src="img/twofactor_email.png" alt="twofactor-email" />
+                <img src="img/twofactor_dashboard.png" alt="twofactor-dashboard" />
+                <img src="img/twofactor.png" alt="twofactor" />
+                <ul class="listSlider">
+                    <li>
+                        <button onclick="prevSlide3(this)"><i class="fas fa-chevron-left"></i></button>
+                    </li>
+                    <li>
+                        <button onclick="nextSlide3(this)"><i class="fas fa-chevron-right"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-content">
+                <h3>Factor de Autenticación (2FA)</h3>
+                <p>
+                    El proyecto implementé una funcionalidad de Doble Factor de Autenticación (2FA) que refuerza la seguridad de las cuentas. Los usuarios reciben un código único en su correo electrónico después de ingresar su contraseña, asegurando un acceso más seguro.
+                </p>
+                <ul class="project-skill">
+                    <li>Django</li>
+                    <li>2FA</li>
+                </ul>
+                <ul class="project-link">
+                    <li>
+                        <a href="https://github.com/HenryCCoillo/django-2FA" target="_blank" title="Código Fuente" rel="noopener">
+                            <i class="icon-border fas fa-code" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://backend.henryban.online/" target="_blank" title="Visualizar" rel="noopener">
+                            <i aria-hidden="true" class="icon-border fas fa-external-link-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-container">
+            <img src="https://henryccoillo.github.io/images/SistemaPagoyServicioBackend.png" style="width: 450px;" alt="cleanfolio" />
+            <div class="project-content">
+                <h3>POKE API Backend</h3>
+                <p>El proyecto Poke API utilizando Django como fuente de datos en el backend. Esta implementado la autenticación de 
+                    JWT para la seguridad del proyecto y agregué endpoints para listar tanto los Pokémon como sus habilidades 
+                    correspondientes. Además, documenté el proyecto utilizando Swagger para una mejor comprensión y facilidad de uso.</p>
+                <ul class="project-skill">
+                    <li>Django</li>
+                    <li>Swagger</li>
+                </ul>
+                <ul class="project-link">
+                    <li>
+                        <a href="https://github.com/HenryCCoillo/PokeApi" target="_blank"
+                            title="source code" rel="noopener"><i class="icon-border fas fa-code"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://henryban.online" target="_blank"
+                            title="preview" rel="noopener"><i aria-hidden="true"
+                                class="icon-border fas fa-external-link-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://github.com/HenryCCoillo?tab=repositories" target="_blank" aria-label="Github">
+                <span class="btn"> Ver más proyectos</span>
+                
+            </a>
+        </div>
+    </section>
+    <section id="stack" class="stack">
+        <h2 class="section-title">Stack</h2>
+        <div class="stack-container">
+            <div class="tech-container">                                      
+                <i class="devicon-python-plain"></i> Python
+            </div>
+            <div class="tech-container">
+                <i class="devicon-django-plain colored"></i> Django
+            </div>
+            <div class="tech-container">
+                <i class="devicon-php-plain colored"></i> PHP
+            </div>
+            <div class="tech-container">
+                <i class="devicon-javascript-plain colored"></i> JavaScript
+            </div>
+            <div class="tech-container">
+                <i class="devicon-mysql-plain colored"></i> MySQL
+            </div>
+            <div class="tech-container">
+                <i class="devicon-postgresql-plain colored"></i> PostgreSQL
+            </div>            
+            <div class="tech-container">
+                <i class="devicon-mongodb-plain colored"></i> MongoDB
+            </div>
+            <div class="tech-container">
+                <i class="devicon-html5-plain colored"></i> HTML
+            </div>
+            <div class="tech-container">
+                <i class="devicon-css3-plain colored"></i> CSS
+            </div>          
+            <div class="tech-container">
+                <i class="devicon-github-plain"></i> GitHub
+            </div>
+            <div class="tech-container">
+                <i class="devicon-git-plain colored"></i> Git
+            </div>
+            <div class="tech-container">
+                <i class="devicon-docker-plain colored"></i> Docker
+            </div>
+            <div class="tech-container">
+                <i class="devicon-linux-plain"></i> Linux
+            </div>
+            <div class="tech-container">
+                <i class="devicon-windows8-plain colored"></i> Windows
+            </div>
+            
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contacto</h2>
+        <ul>
+            <li>
+                <a href="mailto:henryccoillo11@gmail.com">
+                    <span class="btn"><i aria-hidden="true" class="fas icon fa-envelope"></i> Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/henryccoillo" aria-label="Github">
+                    <span class="btn"><i aria-hidden="true" class="fab icon fa-github"></i> Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/henryccoillo" aria-label="Linkedin">
+                    <span class="btn"><i aria-hidden="true" class="fab icon fa-linkedin"></i> Linkedin</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <footer><small>Copyright © 2023 Henry Ccoillo </small></footer>
+    <div class="scroll-container">
+        <div aria-label="Scroll up" class="scroll-up">
+            <a href="#top"><i aria-hidden="true" class="fas fa-arrow-up"></i></a>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+ 
+</body>
+
+</html>
+
